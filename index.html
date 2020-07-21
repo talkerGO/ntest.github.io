@@ -1,36 +1,41 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-  transform: translateZ(-1px);
-}
-</style>
-
-<div class="parallax">
-  <div class="parallax__group">
-    <div class="parallax__layer parallax__layer--back">
-      BackGround
-    </div>
-    <div class="parallax__layer parallax__layer--base">
-      BaseGround
-    </div>
-  </div>
-  <div class="parallax__group">
-    Something else
-  </div>
-</div>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="main.css">
+		
+		<title>Test page</title>
+	
+	</head>
+	<body>
+		<div class = "page">
+			<div class = "menu">
+				<a class = "item">T</a>
+				<a class = "item">T</a>
+				<a class = "item">T</a>
+				
+				<a class = "item bitem">T</a>
+			</div>
+			<div class = "content">
+				<div class = "post post1">
+				
+				</div>
+				<div class = "post post2">
+				
+				</div>
+				<div class = "post post3">
+				
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js"></script>
+        <script type="text/javascript">
+            var os = new OnScreen({
+    tolerance: 0,
+    debounce: 100,
+    container: window
+});
+			
+        </script>
+	</body>
+</html>
