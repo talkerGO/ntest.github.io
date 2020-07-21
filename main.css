@@ -34,7 +34,7 @@ body{
 }
 
 .bitem{
-	position: fixed;
+	position: absolute;
     bottom: 0px;
 }
      
