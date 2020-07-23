@@ -3,6 +3,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" type="text/css" href="wow/animate.min.css">
 		
 		<title>Test page</title>
 	
@@ -17,25 +18,20 @@
 				<a class = "item bitem">T</a>
 			</div>
 			<div class = "content">
-				<div class = "post post1">
+				<div class = "post post1 wow fadeInLeft">
 				
 				</div>
-				<div class = "post post2">
+				<div class = "post post2 wow fadeInLeft">
 				
 				</div>
-				<div class = "post post3">
+				<div class = "post post3 wow fadeInLeft">
 				
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js"></script>
-        <script type="text/javascript">
-            var os = new OnScreen({
-    tolerance: 0,
-    debounce: 100,
-    container: window
-});
-			
-        </script>
+		<script src="wow/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 	</body>
 </html>
